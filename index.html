@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A luxury love letter — Welcome Yukta" />
+  <title>Welcome Yukta ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-landing" data-page="landing">
+
+  <!-- ========== LOADING SCREEN ========== -->
+  <div id="loading-screen" class="loading-screen" aria-live="polite" aria-busy="true">
+    <div class="loading-heart" aria-hidden="true">
+      <svg viewBox="0 0 32 29" class="loading-heart-svg">
+        <path d="M16 28s-14-8.5-14-17A7.5 7.5 0 0 1 16 6.5 7.5 7.5 0 0 1 30 11c0 8.5-14 17-14 17z"/>
+      </svg>
+    </div>
+    <p class="loading-text">Opening with love…</p>
+    <div class="loading-bar" aria-hidden="true"><span></span></div>
+  </div>
+
+  <!-- ========== PAGE TRANSITION OVERLAY ========== -->
+  <div id="page-transition" class="page-transition" aria-hidden="true"></div>
+
+  <!-- ========== CUSTOM CURSOR ========== -->
+  <div id="cursor" class="custom-cursor" aria-hidden="true"></div>
+  <div id="cursor-trail" class="cursor-trail" aria-hidden="true"></div>
+
+  <!-- ========== MUSIC CONTROL ========== -->
+  <button id="music-toggle" class="music-toggle" type="button" aria-label="Toggle music" title="Music">
+    <span class="music-icon music-icon-play" aria-hidden="true">♪</span>
+    <span class="music-icon music-icon-mute" aria-hidden="true">🔇</span>
+  </button>
+  <!-- Drop your romantic song at assets/music.mp3 — ambient WAV plays until then -->
+  <audio id="bg-music" loop preload="auto" src="assets/music.wav"></audio>
+
+  <!-- ========== HERO ========== -->
+  <main class="hero" id="hero">
+    <!-- Animated romantic background layers -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="bg-gradient"></div>
+      <div class="bg-glow glow-1"></div>
+      <div class="bg-glow glow-2"></div>
+      <div class="bg-glow glow-3"></div>
+      <div class="bg-rays"></div>
+      <div class="bg-bokeh" id="bokeh-layer"></div>
+      <canvas id="particles-canvas" class="particles-canvas"></canvas>
+      <div class="petals-layer" id="petals-layer"></div>
+      <div class="hearts-layer" id="hearts-layer"></div>
+    </div>
+
+    <!-- Glassmorphism welcome card -->
+    <section class="welcome-card glass-card" aria-labelledby="welcome-heading">
+      <p class="welcome-eyebrow">A letter written in light</p>
+      <h1 id="welcome-heading" class="welcome-heading">Welcome Yukta <span class="heart-pulse" aria-hidden="true">❤️</span></h1>
+
+      <!-- WRITE YOUR MESSAGE HERE -->
+      <p class="welcome-message">
+        <!-- WRITE YOUR OPENING MESSAGE HERE -->
+        This is where your first words begin — soft, sincere, and only for her.
+      </p>
+
+      <button id="enter-gallery" class="jelly-btn" type="button" aria-label="Enter the love letter gallery">
+        <span class="jelly-btn-text">Click Me ❤️</span>
+        <span class="jelly-btn-ripple" aria-hidden="true"></span>
+      </button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

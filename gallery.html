@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Our story — a luxury romantic gallery" />
+  <title>Our Story ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-gallery" data-page="gallery">
+
+  <!-- ========== LOADING SCREEN ========== -->
+  <div id="loading-screen" class="loading-screen" aria-live="polite" aria-busy="true">
+    <div class="loading-heart" aria-hidden="true">
+      <svg viewBox="0 0 32 29" class="loading-heart-svg">
+        <path d="M16 28s-14-8.5-14-17A7.5 7.5 0 0 1 16 6.5 7.5 7.5 0 0 1 30 11c0 8.5-14 17-14 17z"/>
+      </svg>
+    </div>
+    <p class="loading-text">Gathering our memories…</p>
+    <div class="loading-bar" aria-hidden="true"><span></span></div>
+  </div>
+
+  <!-- ========== PAGE TRANSITION OVERLAY ========== -->
+  <div id="page-transition" class="page-transition" aria-hidden="true"></div>
+
+  <!-- ========== CUSTOM CURSOR ========== -->
+  <div id="cursor" class="custom-cursor" aria-hidden="true"></div>
+  <div id="cursor-trail" class="cursor-trail" aria-hidden="true"></div>
+
+  <!-- ========== MUSIC CONTROL ========== -->
+  <button id="music-toggle" class="music-toggle" type="button" aria-label="Toggle music" title="Music">
+    <span class="music-icon music-icon-play" aria-hidden="true">♪</span>
+    <span class="music-icon music-icon-mute" aria-hidden="true">🔇</span>
+  </button>
+  <!-- Drop your romantic song at assets/music.mp3 — ambient WAV plays until then -->
+  <audio id="bg-music" loop preload="auto" src="assets/music.wav"></audio>
+
+  <!-- ========== DREAMY BACKGROUND ========== -->
+  <div class="gallery-bg" aria-hidden="true">
+    <div class="gallery-gradient"></div>
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+    <div class="glow-circle gc-1"></div>
+    <div class="glow-circle gc-2"></div>
+    <div class="glow-circle gc-3"></div>
+    <div class="float-decor" id="gallery-decor"></div>
+    <!-- Background photo collage -->
+    <div class="bg-collage" id="bg-collage">
+      <img src="assets/photos/photo1.jpg" alt="" class="collage-photo cp-1" loading="lazy" />
+      <img src="assets/photos/photo2.jpg" alt="" class="collage-photo cp-2" loading="lazy" />
+      <img src="assets/photos/photo3.jpg" alt="" class="collage-photo cp-3" loading="lazy" />
+      <img src="assets/photos/photo4.jpg" alt="" class="collage-photo cp-4" loading="lazy" />
+      <img src="assets/photos/photo5.jpg" alt="" class="collage-photo cp-5" loading="lazy" />
+      <img src="assets/photos/photo6.jpg" alt="" class="collage-photo cp-6" loading="lazy" />
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <header class="site-header">
+    <a href="index.html" class="back-home" data-transition="true">← Home</a>
+    <nav class="section-nav" aria-label="Page sections">
+      <a href="#story">Story</a>
+      <a href="#memories">Memories</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#reasons">Reasons</a>
+      <a href="#letter">Letter</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO / STORY ========== -->
+    <section id="story" class="section story-section reveal">
+      <h1 class="section-title script-title">For You, Always</h1>
+      <p class="section-subtitle">
+        <!-- WRITE YOUR MESSAGE HERE -->
+        A quiet place for every moment that made us “us.”
+      </p>
+
+      <div class="story-cards">
+        <article class="glass-card story-card reveal">
+          <h2 class="card-title">❤️ How It Began</h2>
+          <div class="card-body">
+            <p>It all began at the forum meeting. By what felt like God's perfect plan, your friends left you, and you came to sit beside me. A silly prank proposal brought us together, but neither of us knew that one funny moment would become the beginning of the most beautiful chapter of our lives.</p>
+          </div>
+        </article>
+
+        <article class="glass-card story-card reveal">
+          <h2 class="card-title">💖 What We Became</h2>
+          <div class="card-body">
+            <p>From a fake proposal to becoming one of the happiest couples at G. H. Raisoni University, Amravati—our journey has been nothing short of beautiful.</p>
+            <p>Over these four years, we became each other's biggest support, safest place, best friend, and home. We celebrated every little victory, stood by each other through every challenge, and created memories that I will cherish forever.</p>
+            <p>You are not just the love of my life—you are the best part of it.</p>
+          </div>
+        </article>
+
+        <article class="glass-card story-card reveal">
+          <h2 class="card-title">🤍 What I Promise</h2>
+          <div class="card-body">
+            <p>No relationship is perfect, and yes, I've made mistakes. But every challenge has taught me how much you mean to me.</p>
+            <p>I promise to keep learning, growing, and becoming a better person for us.</p>
+            <p>Most importantly, I promise to protect your smile, stand by your side no matter what life brings, support your dreams, respect your heart, and never stop choosing you.</p>
+            <p>Every single day, I will keep loving you a little more than the day before.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== MEMORY GALLERY ========== -->
+    <section id="memories" class="section memories-section reveal">
+      <h2 class="section-title">Memory Gallery</h2>
+      <p class="section-subtitle">
+        <!-- WRITE YOUR MESSAGE HERE -->
+        Moments we keep like pressed flowers between pages.
+      </p>
+
+      <div class="memory-gallery" role="list">
+        <button class="memory-item" type="button" role="listitem" data-full="assets/photos/photo1.jpg" aria-label="Open memory photo 1">
+          <img src="assets/photos/photo1.jpg" alt="Yukta in a wine-red lace top, smiling in a bright dressing room" loading="lazy" />
+          <span class="memory-caption"><!-- WRITE YOUR CAPTION HERE -->Dressed in wine &amp; light</span>
+        </button>
+
+        <button class="memory-item" type="button" role="listitem" data-full="assets/photos/photo2.jpg" aria-label="Open memory photo 2">
+          <img src="assets/photos/photo2.jpg" alt="A romantic kiss captured in a mirror selfie" loading="lazy" />
+          <span class="memory-caption"><!-- WRITE YOUR CAPTION HERE -->Stolen in the mirror</span>
+        </button>
+
+        <button class="memory-item" type="button" role="listitem" data-full="assets/photos/photo3.jpg" aria-label="Open memory photo 3">
+          <img src="assets/photos/photo3.jpg" alt="Yukta winking outdoors by the water on a sunny day" loading="lazy" />
+          <span class="memory-caption"><!-- WRITE YOUR CAPTION HERE -->That playful wink</span>
+        </button>
+
+        <button class="memory-item" type="button" role="listitem" data-full="assets/photos/photo4.jpg" aria-label="Open memory photo 4">
+          <img src="assets/photos/photo4.jpg" alt="Foreheads touching in an intimate outdoor moment under dappled sunlight" loading="lazy" />
+          <span class="memory-caption"><!-- WRITE YOUR CAPTION HERE -->Close enough to feel forever</span>
+        </button>
+
+        <button class="memory-item" type="button" role="listitem" data-full="assets/photos/photo5.jpg" aria-label="Open memory photo 5">
+          <img src="assets/photos/photo5.jpg" alt="Yukta resting peacefully with a soft smile" loading="lazy" />
+          <span class="memory-caption"><!-- WRITE YOUR CAPTION HERE -->Softest quiet</span>
+        </button>
+
+        <button class="memory-item" type="button" role="listitem" data-full="assets/photos/photo6.jpg" aria-label="Open memory photo 6">
+          <img src="assets/photos/photo6.jpg" alt="Sharing a kiss by the lake at golden sunset" loading="lazy" />
+          <span class="memory-caption"><!-- WRITE YOUR CAPTION HERE -->Golden hour, just us</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ========== TIMELINE ========== -->
+    <section id="timeline" class="section timeline-section reveal">
+      <h2 class="section-title">Our Timeline ❤️</h2>
+      <p class="section-subtitle">
+        A constellation of days that changed everything.
+      </p>
+
+      <ol class="timeline">
+        <li class="timeline-item reveal">
+          <span class="timeline-heart" aria-hidden="true">♥</span>
+          <div class="timeline-content glass-card">
+            <h3 class="timeline-date">🌸 The First Day</h3>
+            <p>The first time I saw you was in the auditorium, sitting next to me with your group. I still remember that moment so clearly. I couldn't take my eyes off you. There was something about you that instantly caught my attention. Little did I know that the girl I couldn't stop looking at would one day become the most important person in my life.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <span class="timeline-heart" aria-hidden="true">♥</span>
+          <div class="timeline-content glass-card">
+            <h3 class="timeline-date">💖 Our Best Moment</h3>
+            <p>Do you remember that day when I finally gathered the courage to propose to you? The way I surprised you, held you close, and confessed my feelings is a memory I'll treasure forever. That moment felt like a dream come true. It wasn't just my favorite memory—it was the moment I knew my heart had found its home.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <span class="timeline-heart" aria-hidden="true">♥</span>
+          <div class="timeline-content glass-card">
+            <h3 class="timeline-date">🌹 The Turning Point</h3>
+            <p>Every relationship has its ups and downs, and ours was no different. Through every misunderstanding and every fight, we learned to understand each other better. As we grew closer and shared life's most personal moments, my love for you became deeper than I ever imagined. I realized that what we had wasn't just attraction—it was trust, comfort, friendship, and a love that kept growing stronger every single day.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <span class="timeline-heart" aria-hidden="true">♥</span>
+          <div class="timeline-content glass-card">
+            <h3 class="timeline-date">♾️ Today &amp; Forever</h3>
+            <p>Today, we're in a phase where we're both working hard to build our future. Sometimes we even have to fight just to find time for each other, but through everything, my dream has never changed.</p>
+            <p>One day, I want to call you my wife.</p>
+            <p>I dream of us looking back at these struggles with smiles on our faces—living peacefully together, sitting by our pool on a quiet Tuesday evening, laughing about how far we've come, in the home we've built together. No matter where life takes us, my favorite place will always be wherever you are.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ========== REASONS I LOVE YOU ========== -->
+    <section id="reasons" class="section reasons-section reveal">
+      <h2 class="section-title">Reasons I Love You</h2>
+      <p class="section-subtitle">
+        <!-- WRITE YOUR MESSAGE HERE -->
+        A thousand reasons — here are a few I never want you to forget.
+      </p>
+
+      <div class="reasons-grid">
+        <article class="reason-card glass-card reveal">
+          <span class="reason-heart" aria-hidden="true">♥</span>
+          <h3><!-- WRITE REASON TITLE HERE -->Your Smile</h3>
+        </article>
+        <article class="reason-card glass-card reveal">
+          <span class="reason-heart" aria-hidden="true">♥</span>
+          <h3><!-- WRITE REASON TITLE HERE -->Your Kindness</h3>
+        </article>
+        <article class="reason-card glass-card reveal">
+          <span class="reason-heart" aria-hidden="true">♥</span>
+          <h3><!-- WRITE REASON TITLE HERE -->Your Courage</h3>
+        </article>
+        <article class="reason-card glass-card reveal">
+          <span class="reason-heart" aria-hidden="true">♥</span>
+          <h3><!-- WRITE REASON TITLE HERE -->Your Presence</h3>
+        </article>
+        <article class="reason-card glass-card reveal">
+          <span class="reason-heart" aria-hidden="true">♥</span>
+          <h3><!-- WRITE REASON TITLE HERE -->Your Dreams</h3>
+        </article>
+        <article class="reason-card glass-card reveal">
+          <span class="reason-heart" aria-hidden="true">♥</span>
+          <h3><!-- WRITE REASON TITLE HERE -->Simply You</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== LETTER / ENVELOPE ========== -->
+    <section id="letter" class="section letter-section reveal">
+      <h2 class="section-title">A Letter For You</h2>
+      <p class="section-subtitle">
+        <!-- WRITE YOUR MESSAGE HERE -->
+        Tap the envelope — some words are meant to be opened slowly.
+      </p>
+
+      <div class="envelope-stage">
+        <button id="envelope" class="envelope" type="button" aria-expanded="false" aria-controls="letter-paper" aria-label="Open the love letter">
+          <div class="envelope-back"></div>
+          <div class="envelope-paper" id="letter-paper">
+            <div class="paper-inner">
+              <p class="paper-salutation">My dearest Yukta,</p>
+              <!-- WRITE YOUR LETTER HERE -->
+              <p class="paper-body">
+                <!-- WRITE YOUR FULL LETTER HERE -->
+                # Dear Yukta, ❤️
+
+Thank you for all the love you give me. Thank you for always supporting me, caring for me, and for everything you do. Most of all, thank you for being a part of my life. I truly don't know what my life would have been like without you.
+
+Yuk, you changed my life completely. From someone who never believed in love to someone who loves with all his heart. You taught me what true love feels like. You inspired me to focus on my dreams, become more responsible, and become a better person every single day. You turned a playboy into the most loyal boyfriend, and for that, I will always be grateful.
+
+I love the way you handle me during my stressful moments and my mood swings. Somehow, you always know how to make everything feel lighter. My favorite memories with you will always be our bike rides, where we had the most beautiful conversations and created moments I'll cherish forever.
+
+I'm sorry for the times I couldn't give you enough time, understand you the way you deserved, or made mistakes that hurt you. I know I haven't always been the perfect boyfriend, but I promise I'll never stop trying to become the man you deserve and the boyfriend you've always dreamed of.
+
+To me, you are my world, my happiness, my peace, my biggest strength, and my favorite person. Whenever I'm with you, I feel complete, safe, understood, and truly at home. Life feels lighter, my heart feels calmer, and every moment becomes more beautiful simply because you're beside me.
+
+I promise you that no matter what life brings, I will always give my best for us. I promise to work hard, grow with you, support you in every situation, and build the life we've always dreamed of together. One day, I want to give you a life where you are treated like the queen you truly are—not just with love, but with respect, care, happiness, comfort, and every little thing you deserve. Your smile will always be one of my biggest priorities.
+
+If I had one wish, it would be to spend every chapter of my life with you.
+
+If I had to choose again, I would still choose you.
+
+Again.
+
+Every single time.
+
+I love you more than words can ever express, and I can't wait to create a lifetime of beautiful memories with you.
+
+**Forever yours,**
+
+**Harsh ❤️**
+
+              </p>
+              <p class="paper-closing">
+                <!-- WRITE YOUR SIGN-OFF HERE -->
+                Forever yours,
+              </p>
+              <p class="paper-signature script-title"><!-- WRITE YOUR NAME HERE -->With all my heart</p>
+            </div>
+          </div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <span class="envelope-seal" aria-hidden="true">♥</span>
+          <span class="envelope-hint">Click to open</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ========== ENDING ========== -->
+    <section id="ending" class="section ending-section reveal">
+      <div class="ending-heart" aria-hidden="true">
+        <svg viewBox="0 0 32 29" class="ending-heart-svg">
+          <path d="M16 28s-14-8.5-14-17A7.5 7.5 0 0 1 16 6.5 7.5 7.5 0 0 1 30 11c0 8.5-14 17-14 17z"/>
+        </svg>
+      </div>
+      <h2 class="section-title ending-title">
+        <!-- WRITE YOUR THANK YOU HERE -->
+        Thank You for Being You
+      </h2>
+      <p class="ending-message">
+        <!-- WRITE YOUR CLOSING MESSAGE HERE -->
+        For every soft morning and every brave night — thank you for choosing us.
+      </p>
+      <blockquote class="ending-quote">
+        <!-- WRITE YOUR QUOTE HERE -->
+        “In your light, I learned how love can feel like coming home.”
+      </blockquote>
+      <a href="index.html" class="text-link" data-transition="true">Return to the beginning ♥</a>
+    </section>
+
+  </main>
+
+  <!-- ========== LIGHTBOX ========== -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo lightbox" hidden>
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">×</button>
+    <button type="button" class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous photo">‹</button>
+    <img id="lightbox-img" src="" alt="Expanded memory photo" />
+    <button type="button" class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next photo">›</button>
+    <p id="lightbox-caption" class="lightbox-caption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
